@@ -5,6 +5,10 @@ const todoSchema = new Schema({
     type: String,
     required: true,
   },
+  completed: {
+    type: Boolean,
+    required: true,
+  },
 });
 
 const Todo = model("todo", todoSchema);
